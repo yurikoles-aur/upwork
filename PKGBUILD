@@ -5,9 +5,9 @@
 
 pkgname=upwork
 _pkgname='Upwork'
-pkgver=5.8.0.35
-_hashver='be1a1520901c4eef'
-pkgrel=2
+pkgver=5.8.0.36
+_hashver='0c811ca196f04c1f'
+pkgrel=1
 pkgdesc='Track your time for Hourly Payment Protection. Stay connected.'
 arch=(x86_64)
 url='https://www.upwork.com/ab/downloads/?os=linux'
@@ -19,7 +19,7 @@ _rawver=${pkgver//./_}
 DLAGENTS=("https::/usr/bin/curl --tlsv1.3 -H ${_useragent// /\\ } %u -o %o")
 source=(https://upwork-usw2-desktopapp.upwork.com/binaries/v${_rawver}_${_hashver}/upwork_${pkgver}_amd64.deb
         LICENSE)
-sha256sums=('4aebf6dd32fa9791e190e4914f9e8ba45459271b922d855cd6e4fa85ef23eced'
+sha256sums=('636c5be3e765b7c9c6ba91fee9e77e43f6f3c448430763072b08eef87372c12b'
             '793d8d7bc0f088c48798bda3d5483972636c6b8c5dcd9aeaf85411f7d4547b38')
 
 prepare() {
